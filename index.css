@@ -550,10 +550,14 @@ body:not(.user-is-tabbing) a:focus {
 
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
+    display: flex; /* Add this to control alignment */
+    justify-content: center; /* Center the photo horizontally */
+    align-items: center; /* Center the photo vertically */
+    width: fit-content; /* Container adjusts to photo size */
 }
 
 .about__photo {
-    max-width: 300px; /* Add this to limit the width */
+    max-width: 200px; /* Reduced size */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Optional: add rounded corners */
 }
@@ -564,8 +568,9 @@ body:not(.user-is-tabbing) a:focus {
     }
     
     .about__photo-container {
-        flex: 1;
+        flex: 0 0 auto; /* Container only takes space it needs */
         margin: 0 var(--gutter-huge) 0 0;
+        width: fit-content; /* Ensure container fits content */
     }
 }
 
