@@ -552,6 +552,12 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+.about__photo {
+    max-width: 300px; /* Add this to limit the width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
 @media(min-width: 901px) {
     .about__text {
         flex: 0 0 35%;
