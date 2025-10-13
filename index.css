@@ -542,6 +542,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .about__photo {
+    max-width: 200px;
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Makes it perfectly round */
 }
