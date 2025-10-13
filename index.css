@@ -536,13 +536,13 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .about__content {
+    justify-content: left;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
 
 .about__photo {
-    max-width: 200px;
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Makes it perfectly round */
 }
