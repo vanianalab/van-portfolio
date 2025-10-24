@@ -492,6 +492,40 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+/* Add this new CSS for 4-column grid layout */
+.experience__image-box--grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: var(--gutter-small); /* Space between images */
+}
+
+.experience__image-box--grid .experience__image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; /* Optional: rounded corners */
+}
+
+/* Responsive layout for tablets */
+@media(max-width: 900px) {
+    .experience__image-box--grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+/* Responsive layout for mobile */
+@media(max-width: 600px) {
+    .experience__image-box--grid {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+}
+
+@media(min-width: 901px) {
+    .experience__image-box {
+        flex: 1;
+        margin: 0 0 0 10rem;
+    }
+}
+
 @media(min-width: 901px) {
     .experience__image-box {
         flex: 1;
