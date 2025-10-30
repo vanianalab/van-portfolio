@@ -41,3 +41,44 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+// Lightbox functionality
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxCaption = document.getElementById('lightbox-caption');
+const closeBtn = document.querySelector('.lightbox__close');
+
+// Get all images with lightbox-trigger class
+const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
+
+// Add click event to each image
+lightboxTriggers.forEach(img => {
+  img.addEventListener('click', function() {
+    lightbox.style.display = 'block';
+    lightboxImg.src = this.src;
+    lightboxCaption.innerHTML = this.alt;
+  });
+});
+
+// Close lightbox when clicking the X button
+if (closeBtn) {
+  closeBtn.addEventListener('click', function() {
+    lightbox.style.display = 'none';
+  });
+}
+
+// Close lightbox when clicking outside the image
+if (lightbox) {
+  lightbox.addEventListener('click', function(event) {
+    if (event.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+}
+
+// Close lightbox with ESC key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape' && lightbox) {
+    lightbox.style.display = 'none';
+  }
+});

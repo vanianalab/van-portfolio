@@ -24,7 +24,7 @@
 
   <!-- Put your site title here -->
   <title>
-    Van Ian Alab | C# Developer / Wordpress Developer / Laravel Developer.
+    Van Ian Alab | C# Developer (.NET Core and ASP.NET Core) / AngularJS / Wordpress Developer
   </title>
 
   <meta name="description" content="Add small description of yourslef.">
@@ -108,9 +108,9 @@
                 </ul>
               </div>
             </div>
-            <div class="experience__image-box">
-              <img src="./images/Registrar Module.png" class="experience__image" alt="Project 1" />
-              <img src="./images/Finance Module.png" class="experience__image" alt="Project 2" />
+            <div class="experience__image-box experience__image-box--grid">
+              <img src="./images/Registrar Module.png" class="experience__image lightbox-trigger" alt="Registrar Module - La Salle Academy" />
+              <img src="./images/Finance Module.png" class="experience__image lightbox-trigger" alt="Finance Module - La Salle Academy" />
             </div>
           </div>
 
@@ -145,7 +145,7 @@
               </div>
             </div>
             <div class="experience__image-box">
-              <img src="./images/experience-3.png" class="experience__image" alt="Experience 2" />
+              <img src="./images/experience-3.png" class="experience__image lightbox-trigger" alt="Online Credential Request System - Capstone Project" />
             </div>
           </div>
 
@@ -162,6 +162,80 @@
 
           <!-- Each div with the experience__box class is a project. -->
 
+          <!-- AngularJS -->
+          <div class="experience__box">
+            <div class="experience__text">
+              <div class="experience__text-header">
+                <h3>AngularJS Web Application Personal Starter Pack (School System)</h3>
+                <p>Personal Project</p>
+              </div>
+
+              <div class="experience__text-body">
+                <p>
+                  AngularJS, Bootstrap, HTML, CSS
+                </p>
+
+                <p>
+                  Summary:
+                  Starterpack for web application using AngularJS, Bootstrap, HTML, and CSS.
+                </p>
+
+                <p>
+                  Skills Used:
+                </p>
+
+                <ul class="experience__list">
+                  <li>AngularJS</li>
+                  <li>Bootstrap</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience__image-box experience__image-box--grid">
+              <img src="./images/schoolsystem-angular1.png" class="experience__image lightbox-trigger" alt="School System AngularJS Web Application 1" />
+              <img src="./images/schoolsystem-angular2.png" class="experience__image lightbox-trigger" alt="School System AngularJS Web Application 2" />
+              <img src="./images/schoolsystem-angular3.png" class="experience__image lightbox-trigger" alt="School System AngularJS Web Application 3" />
+              <img src="./images/schoolsystem-angular4.png" class="experience__image lightbox-trigger" alt="School System AngularJS Web Application 4" />
+            </div>
+          </div>
+
+          <!-- AngularJS -->
+          <div class="experience__box">
+            <div class="experience__text">
+              <div class="experience__text-header">
+                <h3>ASP.NET Core Web API Personal Starter Pack</h3>
+                <p>Personal Project</p>
+              </div>
+
+              <div class="experience__text-body">
+                <p>
+                  ASP.NET Core, Entity Framework Core, SQL Server
+                </p>
+
+                <p>
+                  Summary:
+                  Starterpack for Web API using ASP.NET Core, Entity Framework Core, and SQL Server with JSON Web Token (JWT) Authentication.
+                </p>
+
+                <p>
+                  Skills Used:
+                </p>
+
+                <ul class="experience__list">
+                  <li>ASP.NET Core</li>
+                  <li>Entity Framework Core</li>
+                  <li>SQL Server</li>
+                  <li>JWT Authentication</li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience__image-box experience__image-box--grid">
+              <img src="./images/schoolsystem-aspnetapi.png" class="experience__image lightbox-trigger" alt="School System ASP.NET Core Web API" />
+            </div>
+          </div>
+
+          <!-- Wordpress -->
           <div class="experience__box">
             <div class="experience__text">
               <div class="experience__text-header">
@@ -190,10 +264,10 @@
               </div>
             </div>
             <div class="experience__image-box experience__image-box--grid">
-              <img src="./images/van-computerstore1.png" class="experience__image" alt="Van Computer Store 1" />
-              <img src="./images/van-computerstore2.png" class="experience__image" alt="Van Computer Store 2" />
-              <img src="./images/van-computerstore3.png" class="experience__image" alt="Van Computer Store 3" />
-              <img src="./images/van-computerstore4.png" class="experience__image" alt="Van Computer Store 4" />
+              <img src="./images/van-computerstore1.png" class="experience__image lightbox-trigger" alt="Van Computer Store 1" />
+              <img src="./images/van-computerstore2.png" class="experience__image lightbox-trigger" alt="Van Computer Store 2" />
+              <img src="./images/van-computerstore3.png" class="experience__image lightbox-trigger" alt="Van Computer Store 3" />
+              <img src="./images/van-computerstore4.png" class="experience__image lightbox-trigger" alt="Van Computer Store 4" />
             </div>
           </div>
 
@@ -285,6 +359,14 @@
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
+
+  <!-- Add Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox__close">&times;</span>
+    <img class="lightbox__content" id="lightbox-img">
+    <div class="lightbox__caption" id="lightbox-caption"></div>
+  </div>
+
   <script src="./index.js"></script>
 </body>
 
